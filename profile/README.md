@@ -18,7 +18,7 @@ validation, and limitations are part of the evidence.
 |---|---|---|
 | [aibox](https://github.com/projectious-work/aibox) | Reproducible, terminal-first AI development workspaces from a declarative project contract | Usable project — maintained v0.x; v1 direction under active development |
 | [processkit](https://github.com/projectious-work/processkit) | Provider-neutral process memory, skills, schemas, and MCP tools for agentic software projects | Maintained v0.x; v1 direction under active development |
-| [ainfra](https://github.com/projectious-work/ainfra) | Inspectable infrastructure provisioning with reviewed plans and explicit lifecycle controls | Early development — exercised on disposable Hetzner infrastructure |
+| [ainfra](https://github.com/projectious-work/ainfra) | Security-oriented remote infrastructure for agent workloads: controlled execution environments with explicit inbound/outbound network policy, reviewed provisioning, and reproducible teardown | Early development — exercised on disposable Hetzner infrastructure |
 | [ai-market-research](https://github.com/projectious-work/ai-market-research) | Inspectable decision support for AI models, harnesses, configurations, and self-hosting choices | Applied research — actively maintained |
 | [kubeclaw](https://github.com/projectious-work/kubeclaw) | Learning prototype for isolation, network policy, and safe infrastructure boundaries for agent workloads | Prototype — not production ready |
 
@@ -37,7 +37,7 @@ infrastructure targets
         │
         ▼
       ainfra
-provision + configure
+secure remote execution environment + network controls
         │
         ▼
        aibox
@@ -67,8 +67,13 @@ single integrated production platform.
 
 ### Current foundations
 
-- **ainfra** owns infrastructure provisioning and target contracts; it does not
-  own workload images or agent process semantics.
+- **ainfra** explores a security-oriented alternative to running capable agents
+  directly on local machines. It provisions controlled remote execution targets
+  with explicit lifecycle boundaries and deliberate inbound/outbound network
+  configuration, so agent workloads can be isolated from the user's everyday
+  workstation and exposed only through reviewed access paths. Its current scope
+  remains infrastructure provisioning and target contracts; it does not own
+  workload images or agent process semantics.
 - **aibox** owns reproducible workspace images, tooling, runtime configuration,
   and the direction toward backend-neutral deployment; it does not provision
   cloud infrastructure.
