@@ -1,68 +1,118 @@
 # Projectious
 
-Projectious explores and builds the technical and organizational layers
-required to turn emerging AI capabilities into reproducible, governed, and
-auditable ways of working.
+**Turning emerging technical capabilities into predictable, auditable delivery.**
 
-The work connects operating-model design—responsibilities, controls,
-repeatability, sourcing, and auditability—with concrete technical mechanisms.
-Some repositories are usable tools, others are applied research or explicitly
-labelled prototypes. Their status and limitations are part of the evidence.
+Projectious is an independent initiative exploring how AI changes the economics,
+organisation, and governance of technical work — and what infrastructure,
+operating models, and delivery mechanisms are needed to make those changes
+reliable.
+
+The work deliberately combines organisational questions with technical
+experiments. Some repositories are usable tools, some are applied research, and
+some are explicitly labelled prototypes or early-development work. Status,
+validation, and limitations are part of the evidence.
 
 ## Start here
 
-| Project | What it demonstrates | Status |
+| Project | Role in the initiative | Current status |
 |---|---|---|
-| [aibox](https://github.com/projectious-work/aibox) | Reproducible, terminal-first AI development workspaces generated from a declarative project contract | Usable project — active development |
-| [processkit](https://github.com/projectious-work/processkit) | Provider-neutral process memory, validated project state, skills, and MCP tools for coding agents | Usable project — active development, pre-1.0 |
-| [ai-market-research](https://github.com/projectious-work/ai-market-research) | Sourced, inspectable decision support for models, harnesses, subscriptions, and self-hosting choices | Applied research — actively maintained |
-| [kubeclaw](https://github.com/projectious-work/kubeclaw) | A learning prototype exploring infrastructure isolation and network policy for agent workloads | Working prototype — not production ready |
+| [aibox](https://github.com/projectious-work/aibox) | Reproducible, terminal-first AI development workspaces from a declarative project contract | Usable project — maintained v0.x; v1 direction under active development |
+| [processkit](https://github.com/projectious-work/processkit) | Provider-neutral process memory, skills, schemas, and MCP tools for agentic software projects | Stable lifecycle — actively maintained, pre-1.0 |
+| [ainfra](https://github.com/projectious-work/ainfra) | Inspectable infrastructure provisioning with reviewed plans and explicit lifecycle controls | Early development — exercised on disposable Hetzner infrastructure |
+| [ai-market-research](https://github.com/projectious-work/ai-market-research) | Inspectable decision support for AI models, harnesses, configurations, and self-hosting choices | Applied research — actively maintained |
+| [kubeclaw](https://github.com/projectious-work/kubeclaw) | Learning prototype for isolation, network policy, and safe infrastructure boundaries for agent workloads | Prototype — not production ready |
 
-Additional experiments and supporting assets include
-[kaits](https://github.com/projectious-work/kaits),
-[ainfra](https://github.com/projectious-work/ainfra),
-the [Projectious Brand project](https://github.com/projectious-work/brand), and
-the [public website](https://github.com/projectious-work/website). Experimental
-repositories should be read according to the status and limitations stated in
-their own README.
+Supporting work includes the [Projectious brand system](https://github.com/projectious-work/brand),
+the emerging [Projectious Hugo theme](https://github.com/projectious-work/brand-theme-hugo-vanilla),
+and additional experiments such as [kaits](https://github.com/projectious-work/kaits).
 
-## How the layers relate
+## Where this is going
+
+The current technical direction separates responsibilities deliberately rather
+than building one large platform:
 
 ```text
-secure infrastructure targets
+infrastructure target
         │
         ▼
-reproducible workspace images and deployments       aibox
+      ainfra
+provision + configure
         │
         ▼
-governed project memory and agent workflows         processkit
+       aibox
+build + deploy reproducible AI workspaces
         │
         ▼
-evidence-based technical and sourcing decisions     applied research
+    processkit
+process memory + skills + validated agent workflows
+        │
+        ▼
+AI harnesses / agents
+        │
+        ▼
+projects, research, and organisation-specific tools
 ```
 
-The projects are deliberately separated by responsibility. Infrastructure
-templates provision targets; aibox builds and deploys workspaces; processkit
-owns process content and its installation; research repositories make
-decision evidence inspectable.
+This is a direction of travel, not a claim that the whole stack is already a
+single integrated production platform.
 
-## About the work
+- **ainfra** owns infrastructure provisioning and target contracts; it does not
+  own workload images or agent process semantics.
+- **aibox** owns reproducible workspace images, tooling, runtime configuration,
+  and the direction toward backend-neutral deployment; it does not provision
+  cloud infrastructure.
+- **processkit** owns process semantics: project memory, skills, schemas,
+  validated state transitions, and MCP surfaces; it does not own model-provider
+  APIs or workspace infrastructure.
+- AI harnesses remain replaceable integration targets rather than architectural
+  owners of project context.
 
-Projectious is led by Bernhard Gerlach, an Operations, Transformation, and
-Technical Program leader extending operating-model expertise into AI-assisted
+## What Projectious is exploring
+
+The repositories support a broader set of working theses rather than a generic
+"AI tools" portfolio. Current questions include:
+
+- **The minimum viable enterprise is changing.** One person working with
+  multiple specialised agents may be able to coordinate increasingly
+  sophisticated work.
+- **The economics of software quality are changing.** If iteration becomes
+  cheaper, the economically reasonable tolerance for poor software should fall.
+- **The build-versus-buy boundary may move.** Agent-assisted engineering can
+  make narrower, organisation-specific software viable in more cases.
+- **Operating models become more programmable.** Processes, policies, memory,
+  controls, and decision mechanisms increasingly gain machine-readable
+  representations that agents can act upon.
+- **Governance increasingly moves into the system.** Provenance, validation,
+  permissions, process memory, and decision evidence can become executable and
+  observable parts of delivery rather than only documents and meetings.
+
+These are theses to test and refine, not settled predictions.
+
+## How the work is developed
+
+Projectious is led by **Bernhard Gerlach**, an Operations, Transformation, and
+Technical Program leader extending operating-model experience into AI-assisted
 delivery, agent infrastructure, and reproducible technical workflows.
 
-AI tools assist parts of the research, implementation, and documentation.
-Problem framing, architecture boundaries, portfolio decisions, review, and
-the standard of evidence remain human responsibilities. Each repository should
-document its own validation and limitations rather than relying on this profile
-for maturity claims.
+AI tools assist research, implementation, testing, and documentation. Problem
+framing, architecture boundaries, portfolio decisions, evidence standards, and
+final accountability remain human responsibilities.
 
-## What this portfolio does not claim
+A useful shorthand for the territory is:
 
-The presence of a repository does not imply customer adoption, production
-operation, security assurance, or enterprise support. Prototype and research
-labels are intentional. Follow each project’s quick start, tests, releases,
-and limitations for the current evidence.
+**Agentic AI. Agile. Cloud.**
 
-Learn more at [projectious.work](https://projectious.work).
+Not as three service lines: agentic AI changes the unit and economics of
+productive work; Agile contributes iterative learning and short feedback loops;
+Cloud provides programmable infrastructure. Operating models, governance, and
+accountability connect them into reliable delivery.
+
+## Evidence before claims
+
+The presence of a repository does **not** imply customer adoption, production
+operation, security assurance, enterprise support, or commercial product
+maturity.
+
+For each project, follow its own README, status page, validation evidence,
+releases, tests, and limitations. Prototype and early-development labels are
+intentional.
