@@ -120,7 +120,7 @@ These ideas may become additional repositories or may remain cross-cutting
 capabilities across aibox, processkit, ainfra, and future projectious.work
 projects. Repository boundaries should follow responsibility, not marketing.
 
-## What projectious.work is exploring
+## projectious.work's core theses
 
 The technical stack exists to test a broader set of theses about future
 organisations and software, not to create a generic “AI tools” portfolio.
