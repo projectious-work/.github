@@ -17,7 +17,7 @@ validation, and limitations are part of the evidence.
 | Project | Role in the initiative | Current status |
 |---|---|---|
 | [aibox](https://github.com/projectious-work/aibox) | Reproducible, terminal-first AI development workspaces from a declarative project contract | Usable project — maintained v0.x; v1 direction under active development |
-| [processkit](https://github.com/projectious-work/processkit) | Provider-neutral process memory, skills, schemas, and MCP tools for agentic software projects | Stable lifecycle — actively maintained, pre-1.0 |
+| [processkit](https://github.com/projectious-work/processkit) | Provider-neutral process memory, skills, schemas, and MCP tools for agentic software projects | Maintained v0.x; v1 direction under active development |
 | [ainfra](https://github.com/projectious-work/ainfra) | Inspectable infrastructure provisioning with reviewed plans and explicit lifecycle controls | Early development — exercised on disposable Hetzner infrastructure |
 | [ai-market-research](https://github.com/projectious-work/ai-market-research) | Inspectable decision support for AI models, harnesses, configurations, and self-hosting choices | Applied research — actively maintained |
 | [kubeclaw](https://github.com/projectious-work/kubeclaw) | Learning prototype for isolation, network policy, and safe infrastructure boundaries for agent workloads | Prototype — not production ready |
