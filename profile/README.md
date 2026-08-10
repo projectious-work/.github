@@ -159,10 +159,17 @@ These are theses to test, challenge, and refine — not settled predictions.
 
 ## How the work is developed
 
-projectious.work is led by **Bernhard Gerlach**, an Operations, Transformation,
-and Technical Program leader extending operating-model experience into
-AI-assisted delivery, agent infrastructure, reproducible technical workflows,
-and AI-enabled organisational design.
+projectious.work is a project led by **Bernhard Gerlach**, an Operations,
+Transformation, and Technical Program leader extending operating-model
+experience into AI-assisted delivery, agent infrastructure, reproducible
+technical workflows, and AI-enabled organisational design.
+
+The intent is to **live what is being developed**. projectious.work should use
+its own tools, workflows, memory structures, governance mechanisms, and agentic
+working patterns wherever they are mature enough to be useful. In other words:
+*eat your own dogfood*. The project itself is therefore part of the experiment —
+research, development, documentation, governance, and publishing should provide
+practical evidence about what works, what breaks, and what needs to change.
 
 AI tools assist research, implementation, testing, and documentation. Problem
 framing, architecture boundaries, portfolio decisions, evidence standards, and
