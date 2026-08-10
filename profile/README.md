@@ -23,8 +23,7 @@ validation, and limitations are part of the evidence.
 | [kubeclaw](https://github.com/projectious-work/kubeclaw) | Learning prototype for isolation, network policy, and safe infrastructure boundaries for agent workloads | Prototype — not production ready |
 
 Supporting work includes the [projectious.work brand system](https://github.com/projectious-work/brand),
-the emerging [projectious.work Hugo theme](https://github.com/projectious-work/brand-theme-hugo-vanilla),
-and additional experiments such as [kaits](https://github.com/projectious-work/kaits).
+[kaits](https://github.com/projectious-work/kaits), and [airunner](https://github.com/projectious-work/airunner).
 
 ## Where this is going
 
@@ -53,11 +52,11 @@ project/process memory + skills + validated workflows
 working memory · project memory · organisational memory
         │
         ▼
- orchestration layer
-agent selection · delegation · supervision · hand-off · recovery
+AI harnesses / specialised agents
         │
         ▼
-AI harnesses / specialised agents
+ orchestration layer
+agent selection · delegation · supervision · hand-off · recovery
         │
         ▼
 projects, research, and organisation-specific software
@@ -90,10 +89,11 @@ Areas under exploration include:
 - **Multi-layer memory.** Distinguish ephemeral working context from durable
   project memory and broader organisational memory. Different layers need
   different retention, validation, access, provenance, and summarisation rules.
-- **Orchestration.** Coordinate specialised agents without turning one central
-  prompt or one monolithic supervisor into the new bottleneck. Relevant
-  questions include delegation, capability discovery, routing, hand-off,
-  supervision, retries, escalation, recovery, and human intervention.
+- **Orchestration above the agent layer.** Coordinate specialised agents without
+  turning one central prompt or one monolithic supervisor into the new
+  bottleneck. The orchestration layer selects and combines available harnesses
+  and agents, delegates work, supervises execution, manages hand-offs, retries,
+  escalation, recovery, and human intervention.
 - **Shared organisational context.** Give multiple agents a reliable way to work
   from the same decisions, policies, constraints, interfaces, and history while
   avoiding silent divergence between local context copies.
