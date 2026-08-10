@@ -22,8 +22,12 @@ validation, and limitations are part of the evidence.
 | [ai-market-research](https://github.com/projectious-work/ai-market-research) | Inspectable decision support for AI models, harnesses, configurations, and self-hosting choices | Applied research — actively maintained |
 | [kubeclaw](https://github.com/projectious-work/kubeclaw) | Learning prototype for isolation, network policy, and safe infrastructure boundaries for agent workloads | Prototype — not production ready |
 
-Supporting work includes the [projectious.work brand system](https://github.com/projectious-work/brand),
-[kaits](https://github.com/projectious-work/kaits), and [airunner](https://github.com/projectious-work/airunner).
+Supporting work includes the [projectious.work brand system](https://github.com/projectious-work/brand)
+(**complete brand and design system with tokens, assets, templates, and published documentation — active/released, v1.0**),
+[kaits](https://github.com/projectious-work/kaits)
+(**RPG-inspired multi-agent organisation and orchestration experiment with roles, departments, task routing, budgets, autonomy, lifecycle hooks, and an event-driven UI — substantial working prototype; not a production platform**),
+and **airunner**
+(**concept for a lightweight agent runtime/execution layer — idea/private stub; no public implementation yet**).
 
 ## Where this is going
 
